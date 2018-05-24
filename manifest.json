@@ -1,0 +1,37 @@
+{
+    "manifest_version": 2,
+
+    "name": "Daily Prayer Time",
+    "description": "Give notifications of daily prayer times",
+    "version": "1.0",
+
+    "browser_action": {
+      "default_icon": "icon3.png",
+      "default_popup": "popup.html"
+    },
+
+    "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
+
+    "icons" : {
+      "64":"icon3.png"
+    },
+
+    "background": {
+     "page": "background.html"
+   },
+
+   "permissions":[
+     "notifications","storage"
+   ],
+   "options_ui": {
+
+    "page": "options.html",
+
+    "chrome_style": true,
+    "open_in_tab": true
+  }
+
+
+
+
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="/Library/jquery-3.2.0.min.js"></script>
+  <script src="/Library/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="/Library/bootstrap.min.css">
+  <script src="options.js"></script>
+  <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-6 col-md-4">
+        <h4>Fazr Prayer Time</h4>
+        <input type="number" id="FirstHourManual" min="0" max="12" />
+        <input type="number" id="FirstMinuteManual" min="0" max="60" />
+      </div>
+      <div class="col-6 col-md-4">
+        <h4>Juma Prayer Time</h4>
+        <input type="number" id="SecondHourManual" min="0" max="12" />
+        <input type="number" id="SecondMinuteManual" min="0" max="60" />
+      </div>
+
+
+
+      <div class="col-6 col-md-4">
+        <h4>Duhr Prayer Time</h4>
+        <input type="number" id="ThirdHourManual" min="0" max="12" />
+        <input type="number" id="ThirdMinuteManual" min="0" max="60" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6 col-md-4">
+        <h4>Asr Prayer Time</h4>
+        <input type="number" id="FourthHourManual" min="0" max="12" />
+        <input type="number" id="FourthMinuteManual" min="0" max="60" />
+      </div>
+
+
+
+      <div class="col-6 col-md-4">
+        <h4>Magrib Prayer Time</h4>
+        <input type="number" id="FifthHourManual" min="0" max="12" />
+        <input type="number" id="FifthMinuteManual" min="0" max="60" />
+      </div>
+      <div class="col-6 col-md-4">
+        <h4>Isha Prayer Time</h4>
+        <input type="number" id="SixthHourManual" min="0" max="12" />
+        <input type="number" id="SixthMinuteManual" min="0" max="60" />
+      </div>
+    </div>
+
+    <br/>
+
+    <div>
+      <label><input type="checkbox" value="" id="notificationShowStatus">Show notification before <input type="number" id="notificationTimeBefore" min="0"  max="60"/> mins </label>
+    </div>
+    <div class="checkbox">
+  <label><input type="checkbox" value="" id="notificationSoundStatus">Notification Sound</label>
+</div>
+<br/>
+    <input class="btn btn-primary" type="submit" id="buttonSaveManualTime" value="Save Settings"/>
+    <input class="btn btn-primary" type="submit" id="buttonResetDefault" value="Reset Default" />
+    <br/>
+    <br/>
+    <!-- <div class="checkbox">
+      <label><input type="checkbox" value="">Show notification </label>
+    </div> -->
+
+    <!-- <div>
+      <label><input type="checkbox" value="" id="notificationShowStatus">Show notification before <input type="number" id="notificationTimeBefore" min="0"  max="60"/> mins </label>
+    </div>
+    <div class="checkbox">
+  <label><input type="checkbox" value="" id="notificationSoundStatus">Notification Sound</label>
+</div> -->
+
+<!-- <input class="btn btn-primary" type="submit" id="buttonNotificationSettings" value="Save Notification Settings"/>
+<br/>
+<br/> -->
+<button type="button" class="btn btn-success btn-lg" data-toggle="collapse" data-target="#demo">Instructions</button>
+<br/>
+<div id="demo" class="collapse">
+  <ul class="list-group">
+    <li class="list-group-item">
+      <div class="alert alert-info">
+      <strong>Make sure you are connected to internet for 'First Time Launch' and 'Reset Default'.</strong>
+      </div>
+
+    </li>
+    <li class="list-group-item">
+      <div class="alert alert-info">
+        <!-- For first time launching the app and reseting to Default, you must have patience because of API HIT. Please check
+                after some time if Default Time is not still reloaded. -->
+
+        <strong>
+          May be 'Default Prayer Time' does not match for your region. So, it is recommended that you set your own prayer timing manually.
+         </strong>
+
+      </div>
+
+    </li>
+    <li class="list-group-item">
+      <div class="alert alert-info">
+        <strong>  Make sure, you give international time when to set manual prayer time. Otherwise, notification will trigger two times a day, AM & PM.</strong>
+
+      </div>
+
+    </li>
+  </ul>
+</div>
+<br/>
+<br/>
+  </div>
+
+</body>
+
+</html>
